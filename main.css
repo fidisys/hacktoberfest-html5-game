@@ -192,9 +192,13 @@ html, body {
     line-height: 60px;
     margin-top: 222px;
   }
-  .game-container .game-message .lower {
-    display: block;
-    margin-top: 59px;
+  .game-container .game-message.game-over .lower {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    margin: 0;
+    transform: translate(-50%, 130%);
   }
   .game-container .game-message a {
     display: inline-block;
@@ -215,7 +219,7 @@ html, body {
     display: block;
   }
 
-  .game-container .game-message.game-won, .game-container .game-message.game-over .lower {
+  .game-container .game-message.game-won {
     display: none;
   }
   
