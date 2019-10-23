@@ -6,3 +6,5 @@ Do you think this app requires any prerequisite setup. Answer is no! Just clone 
 
 ### 2048 Game Rules
 WIP
+
+Game will improve mathematical skills to do quick actions
