@@ -485,7 +485,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     var retry = document.getElementsByClassName("retry-button")[0];
-    // retry.addEventListener("click", this.restart.bind(this));
+    retry.addEventListener("click", this.restart.bind(this));
   
     // Listen to swipe events
     var gestures = [Hammer.DIRECTION_UP, Hammer.DIRECTION_RIGHT,
