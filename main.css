@@ -6,11 +6,7 @@ html, body {
     font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
     font-size: 18px;
   }
-  
-  body {
-    margin: 20px 0;  
-  }
-  
+    
   .heading:after {
     content: "";
     display: block;
@@ -58,39 +54,44 @@ html, body {
       opacity: 0;
     }
   }
-  .score-container {
+  .heading {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    float: right;
+  }
+  .score-container {
     background: #bbada0;
-    padding: 15px 25px;
-    font-size: 25px;
-    height: 25px;
-    line-height: 47px;
-    font-weight: bold;
     border-radius: 3px;
     color: white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 47px;
     margin-top: 8px;
+    padding: 15px 25px;
+    position: absolute;
+    right: 0;
   }
   .score-container:after {
-    position: absolute;
-    width: 100%;
-    top: 10px;
-    left: 0;
-    content: "Score";
-    text-transform: uppercase;
-    font-size: 13px;
-    line-height: 13px;
-    text-align: center;
     color: #eee4da;
+    content: "Score";
+    font-size: 13px;
+    left: 0;
+    line-height: 13px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 10px;
+    width: 100%;
   }
   .score-container .score-addition {
-    position: absolute;
-    right: 30px;
-    color: red;
-    font-size: 25px;
-    line-height: 25px;
-    font-weight: bold;
     color: rgba(119, 110, 101, 0.9);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 25px;
+    position: absolute;
+    right: 22px;
     z-index: 100;
     -webkit-animation: move-up 600ms ease-in;
     -moz-animation: move-up 600ms ease-in;
@@ -215,10 +216,6 @@ html, body {
     display: block;
   }
 
-  .game-container .game-message.game-won, .game-container .game-message.game-over .lower {
-    display: none;
-  }
-  
   .grid-container {
     position: absolute;
     z-index: 1;
