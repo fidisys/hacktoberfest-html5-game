@@ -216,7 +216,7 @@ html, body {
   }
 
   .game-container .game-message.game-won, .game-container .game-message.game-over .lower {
-    display: none;
+    display: block;
   }
   
   .grid-container {
