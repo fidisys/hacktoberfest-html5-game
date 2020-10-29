@@ -25,3 +25,5 @@ Do you think this app requires any prerequisite setup. Answer is no! Just clone 
 - [Hammer JS](http://hammerjs.github.io/)
 
 > NOTE: This list is a WIP and will be extended by other contributors over time.
+
+create a snake and ladder game also.
